@@ -66,6 +66,8 @@ fi
 
 fix-permissions ./.config
 
+echo "permisos .config"
+chown 1001:0 .config && chgrp -R 0 .config && chmod -R g=u .config
 echo "---> Installing all dependencies yarn"
 yarn build
 
