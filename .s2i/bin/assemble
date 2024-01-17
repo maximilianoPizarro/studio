@@ -63,7 +63,7 @@ if [ -n "$NPM_MIRROR" ]; then
 	npm config set registry $NPM_MIRROR
 fi
 
-mkdir .config
+
 fix-permissions ./.config
 
 echo "---> Installing all dependencies yarn"
