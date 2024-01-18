@@ -65,6 +65,8 @@ fi
 
 
 fix-permissions ./.config
+export NVM_DIR="$HOME/.nvm" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
 nvm install 12.18.0
 nvm use 12.18.0
 
