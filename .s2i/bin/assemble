@@ -65,6 +65,8 @@ fi
 
 
 fix-permissions ./.config
+nvm install 12.18.0
+nvm use 12.18.0
 
 echo "---> Installing all dependencies yarn"
 yarn build
